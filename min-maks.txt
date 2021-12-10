@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class min_maks {
+    public static void main(String[] args) {
+        int sayi=0,maks=0,min=0;
+        Scanner inp= new Scanner(System.in);
+        System.out.println("kaç tane sayı gireceksiniz=");
+        int n=inp.nextInt();
+        for (int i=1;i<=n;i++){
+            System.out.print(i+". Sayıyı Giriniz=");
+            sayi= inp.nextInt();
+            if (i==1){
+                maks=sayi;
+                min=sayi;
+                }
+
+            else if (sayi>maks){
+                maks=sayi;
+                    }
+            else if (sayi<min){
+                min=sayi;
+                    }
+
+
+
+    }
+        System.out.println("En Küçük Sayı="+min);
+        System.out.println("En Büyük Sayı="+maks);
+
+
+}}
